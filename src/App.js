@@ -6,10 +6,12 @@ import Test from './components/test'
 import Bar from './components/navbar.js';
 
 
+//attempt for AWS Amplify
+
+
 function App() {
 
   return (
-    
     <Router>
     <div className="App">
       <div className="display">

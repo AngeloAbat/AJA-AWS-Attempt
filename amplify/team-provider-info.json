@@ -14,6 +14,12 @@
     "categories": {
       "function": {
         "graphQlLambdaAuthorizer3c17cbac": {}
+      },
+      "auth": {
+        "ajaawsattempt21123b3d": {}
+      },
+      "api": {
+        "AJAAWSAttempt": {}
       }
     }
   }

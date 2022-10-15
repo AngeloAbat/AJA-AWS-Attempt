@@ -6,7 +6,7 @@ export default function Test(){
     const[testData, setTestData] = useState([])
 
     useEffect(() => {
-        const SearchEndPoint = `https://o9hue9hpt7.execute-api.us-west-2.amazonaws.com/items`
+        const SearchEndPoint = `https://cisptnoba3.execute-api.us-west-2.amazonaws.com/items`
         const fetchData = async() => {
             const response = await fetch(SearchEndPoint)
             const resData = await response.json()

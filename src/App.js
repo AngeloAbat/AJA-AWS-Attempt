@@ -1,5 +1,8 @@
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom'
 import React from "react";
+import { Amplify, Auth} from "aws-amplify";
+import awsconfig from './aws-exports';
+
 import './App.css';
 import Home from './components/home';
 import Test from './components/test'
@@ -7,6 +10,7 @@ import Bar from './components/navbar.js';
 
 
 //attempt for AWS Amplify
+Amplify.configure(awsconfig)
 
 
 function App() {

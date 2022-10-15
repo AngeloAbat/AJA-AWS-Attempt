@@ -8,14 +8,12 @@ export default function Test(){
     useEffect(() => {
         const SearchEndPoint = `https://o9hue9hpt7.execute-api.us-west-2.amazonaws.com/items`
         const fetchData = async() => {
-            const response = await fetch(SearchEndPoint, { mode: 'no-cors'});
-            const resData = await response.json();
-            setTestData(resData);
+            const response = await fetch(SearchEndPoint)
+            const resData = await response.json()
+            setTestData(resData.Items)
         }
         fetchData()
-        console.log("I Worked!")
     }, [])
-    
 
     const TestDataMapping = testData.map((item, index) =>{
         return(
@@ -23,7 +21,7 @@ export default function Test(){
                 <Card bg="dark" style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={item.Image}/>
                     <Card.Body>
-                        <Card.Title>{item.ItemName}</Card.Title>
+                        <Card.Title>{item.Name}</Card.Title>
                         <Card.Text>
                             Some quick example text to build on the card title and make up the
                             bulk of the card's content.
